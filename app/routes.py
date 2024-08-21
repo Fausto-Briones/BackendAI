@@ -6,7 +6,7 @@ from .connectionAdapter import ConnectionAdapter
 def register_routes(app):
     @app.route('/')
     def home():
-        return render_template('index.html')
+        return "Hello render"
 
     @app.route('/predict', methods=['POST'])
     def predict():
